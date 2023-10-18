@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20231018 19:15:10.332" rpa="false" schemaversion="4">
+<suite id="s1" name="RFCoinswitch" source="D:\Py\RFCoinswitch">
+<suite id="s1-s1" name="Testcases" source="D:\Py\RFCoinswitch\Testcases">
+<suite id="s1-s1-s1" name="Testcases" source="D:\Py\RFCoinswitch\Testcases\testcases.robot">
+<test id="s1-s1-s1-t1" name="Coinswitch homepage" line="19">
+<kw name="Opening the Coinswitch application" library="LaunchHomepage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${WebDriver}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231018 19:15:10.799" level="INFO">Opening browser 'chrome' to base url 'https://coinswitch.co/pro/'.</msg>
+<status status="PASS" starttime="20231018 19:15:10.799" endtime="20231018 19:15:15.273"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231018 19:15:15.273" endtime="20231018 19:15:15.414"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Coinswitch homepage is displayed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:15:15.414" endtime="20231018 19:15:15.414"/>
+</kw>
+<status status="PASS" starttime="20231018 19:15:10.799" endtime="20231018 19:15:15.414"/>
+</kw>
+<kw name="Verifying Buy Bitcoin option" library="BuyBitcoin">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BuyBitcoin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:15:15.414" level="INFO">Clicking element 'xpath = (//*[@class='group-h tw-flex tw-w-full tw-justify-end tw-gap-4 tw-text-lg tw-text-white']/li/span/a)[1]'.</msg>
+<status status="PASS" starttime="20231018 19:15:15.414" endtime="20231018 19:15:15.646"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:15:18.655" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:15:15.646" endtime="20231018 19:15:18.655"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${BitcoinTitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:15:19.880" level="INFO">${BitcoinTitle} = BTC to INR | Buy BTC in India at best price at ₹24,78,343 | CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:15:18.655" endtime="20231018 19:15:19.880"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${BitcoinTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:15:19.888" endtime="20231018 19:15:19.888"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231018 19:15:19.888" level="INFO">Opening url 'https://coinswitch.co/pro/'</msg>
+<status status="PASS" starttime="20231018 19:15:19.888" endtime="20231018 19:15:21.728"/>
+</kw>
+<status status="PASS" starttime="20231018 19:15:15.414" endtime="20231018 19:15:21.728"/>
+</kw>
+<kw name="Verifying Buy Ethereum option" library="BuyEthereum">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BuyEthereum}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:15:21.728" level="INFO">Clicking element 'xpath = (//*[@class='group-h tw-flex tw-w-full tw-justify-end tw-gap-4 tw-text-lg tw-text-white']/li/span/a)[2]'.</msg>
+<status status="PASS" starttime="20231018 19:15:21.728" endtime="20231018 19:15:21.965"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:15:24.965" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:15:21.965" endtime="20231018 19:15:24.965"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${EthereumTitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:15:26.268" level="INFO">${EthereumTitle} = ETH to INR | Buy ETH in India at best price at | CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:15:24.965" endtime="20231018 19:15:26.268"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${EthereumTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:15:26.268" endtime="20231018 19:15:26.276"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231018 19:15:26.278" level="INFO">Opening url 'https://coinswitch.co/pro/'</msg>
+<status status="PASS" starttime="20231018 19:15:26.276" endtime="20231018 19:15:28.277"/>
+</kw>
+<status status="PASS" starttime="20231018 19:15:21.728" endtime="20231018 19:15:28.277"/>
+</kw>
+<kw name="Verifying Buy Tether option" library="BuyTether">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BuyTether}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:15:28.294" level="INFO">Clicking element 'xpath = (//*[@class='group-h tw-flex tw-w-full tw-justify-end tw-gap-4 tw-text-lg tw-text-white']/li/span/a)[3]'.</msg>
+<status status="PASS" starttime="20231018 19:15:28.294" endtime="20231018 19:15:28.454"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:15:31.454" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:15:28.454" endtime="20231018 19:15:31.454"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${TetherTitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:15:32.149" level="INFO">${TetherTitle} = USDT to INR | Buy USDT in India at best price at ₹86.81 | CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:15:31.454" endtime="20231018 19:15:32.149"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${TetherTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:15:32.149" endtime="20231018 19:15:32.149"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231018 19:15:32.149" level="INFO">Opening url 'https://coinswitch.co/pro/'</msg>
+<status status="PASS" starttime="20231018 19:15:32.149" endtime="20231018 19:15:33.580"/>
+</kw>
+<status status="PASS" starttime="20231018 19:15:28.277" endtime="20231018 19:15:33.580"/>
+</kw>
+<kw name="Verifying the Products dropdown" library="Products">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Products}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231018 19:15:33.580" level="INFO">Simulating Mouse Over on element 'xpath = (//*[@class='tw-text-gray-200 group-hover:tw-text-gold'])[1]'.</msg>
+<status status="PASS" starttime="20231018 19:15:33.580" endtime="20231018 19:15:33.925"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CryptoRupeeIndex}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:15:33.935" level="INFO">Clicking element 'xpath = //span[contains(text(),"Crypto Rupee Index")]'.</msg>
+<status status="PASS" starttime="20231018 19:15:33.935" endtime="20231018 19:15:34.235"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:15:37.236" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:15:34.235" endtime="20231018 19:15:37.236"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${Windows}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20231018 19:15:37.251" level="INFO">${Windows} = ['F932FF181D720A9B5A5B455867C46608', '9EBE64134751CE7D98DB26E8FE66D936']</msg>
+<status status="PASS" starttime="20231018 19:15:37.236" endtime="20231018 19:15:37.251"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${Windows}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231018 19:15:37.251" endtime="20231018 19:15:37.379"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${CRItitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:15:37.403" level="INFO">${CRItitle} = CRE8: Indian Crypto Index by CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:15:37.379" endtime="20231018 19:15:37.403"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${CRItitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:15:37.403" endtime="20231018 19:15:37.403"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20231018 19:15:37.403" endtime="20231018 19:15:37.471"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${Windows}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231018 19:15:37.471" endtime="20231018 19:15:37.490"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Products}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231018 19:15:37.490" level="INFO">Simulating Mouse Over on element 'xpath = (//*[@class='tw-text-gray-200 group-hover:tw-text-gold'])[1]'.</msg>
+<status status="PASS" starttime="20231018 19:15:37.490" endtime="20231018 19:15:37.810"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SystematicInvestmentPlan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:15:37.810" level="INFO">Clicking element 'xpath = //span[contains(text(),"Systematic Investment Plan")]'.</msg>
+<status status="PASS" starttime="20231018 19:15:37.810" endtime="20231018 19:15:38.135"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:15:41.135" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:15:38.135" endtime="20231018 19:15:41.135"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${Windows}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20231018 19:15:41.151" level="INFO">${Windows} = ['F932FF181D720A9B5A5B455867C46608', '0B0EA1D50711559494D0BC66F8BE2570']</msg>
+<status status="PASS" starttime="20231018 19:15:41.135" endtime="20231018 19:15:41.151"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${Windows}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231018 19:15:41.151" endtime="20231018 19:15:41.287"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${SIPtitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:15:41.296" level="INFO">${SIPtitle} = Invest in BTC, SHIB, ETH, and DOGE through SIP - CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:15:41.287" endtime="20231018 19:15:41.296"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${SIPtitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:15:41.296" endtime="20231018 19:15:41.296"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20231018 19:15:41.296" endtime="20231018 19:15:41.385"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${Windows}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231018 19:15:41.385" endtime="20231018 19:15:41.402"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Products}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231018 19:15:41.402" level="INFO">Simulating Mouse Over on element 'xpath = (//*[@class='tw-text-gray-200 group-hover:tw-text-gold'])[1]'.</msg>
+<status status="PASS" starttime="20231018 19:15:41.402" endtime="20231018 19:15:41.688"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${APITrading}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:15:41.688" level="INFO">Clicking element 'xpath = //span[contains(text(),"API Trading")]'.</msg>
+<status status="PASS" starttime="20231018 19:15:41.688" endtime="20231018 19:15:41.993"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:15:44.993" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:15:41.993" endtime="20231018 19:15:44.993"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${APItitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:15:45.025" level="INFO">${APItitle} = API Trading with CoinSwitch, Boost Your Crypto Investments with Best Trading Software</msg>
+<status status="PASS" starttime="20231018 19:15:44.993" endtime="20231018 19:15:45.025"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${APItitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:15:45.025" endtime="20231018 19:15:45.025"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231018 19:15:45.025" level="INFO">Opening url 'https://coinswitch.co/pro/'</msg>
+<status status="PASS" starttime="20231018 19:15:45.025" endtime="20231018 19:15:45.965"/>
+</kw>
+<status status="PASS" starttime="20231018 19:15:33.580" endtime="20231018 19:15:45.965"/>
+</kw>
+<kw name="Verifying the Company dropdown" library="Company">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Company}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231018 19:15:45.965" level="INFO">Simulating Mouse Over on element 'xpath = (//*[@class='tw-text-gray-200 group-hover:tw-text-gold'])[2]'.</msg>
+<status status="PASS" starttime="20231018 19:15:45.965" endtime="20231018 19:15:46.269"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AboutUs}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:15:46.269" level="INFO">Clicking element 'xpath = //span[contains(text(),"About Us")]'.</msg>
+<status status="PASS" starttime="20231018 19:15:46.269" endtime="20231018 19:15:46.409"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:15:49.410" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:15:46.409" endtime="20231018 19:15:49.410"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${Windows}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20231018 19:15:49.425" level="INFO">${Windows} = ['F932FF181D720A9B5A5B455867C46608', '90F9271E6F72DF1AFAEE78245F6EEE4E']</msg>
+<status status="PASS" starttime="20231018 19:15:49.410" endtime="20231018 19:15:49.425"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${Windows}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231018 19:15:49.425" endtime="20231018 19:15:49.560"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Abouttitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:15:49.609" level="INFO">${Abouttitle} = </msg>
+<status status="PASS" starttime="20231018 19:15:49.560" endtime="20231018 19:15:49.609"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Abouttitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:15:49.609" endtime="20231018 19:15:49.609"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20231018 19:15:49.609" endtime="20231018 19:15:49.682"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${Windows}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231018 19:15:49.682" endtime="20231018 19:15:49.699"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Company}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231018 19:15:49.699" level="INFO">Simulating Mouse Over on element 'xpath = (//*[@class='tw-text-gray-200 group-hover:tw-text-gold'])[2]'.</msg>
+<status status="PASS" starttime="20231018 19:15:49.699" endtime="20231018 19:15:50.010"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Careers}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:15:50.010" level="INFO">Clicking element 'xpath = //span[contains(text(),"Careers")]'.</msg>
+<status status="PASS" starttime="20231018 19:15:50.010" endtime="20231018 19:15:50.275"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:15:53.276" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:15:50.275" endtime="20231018 19:15:53.276"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${Windows}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20231018 19:15:53.307" level="INFO">${Windows} = ['F932FF181D720A9B5A5B455867C46608', 'EA4A30EFA46CAEC37827A9F7D4956CAB']</msg>
+<status status="PASS" starttime="20231018 19:15:53.276" endtime="20231018 19:15:53.307"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${Windows}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231018 19:15:53.307" endtime="20231018 19:15:53.433"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Careerstitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:15:53.617" level="INFO">${Careerstitle} = Careers at CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:15:53.433" endtime="20231018 19:15:53.617"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Careerstitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:15:53.617" endtime="20231018 19:15:53.617"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20231018 19:15:53.617" endtime="20231018 19:15:53.678"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${Windows}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231018 19:15:53.678" endtime="20231018 19:15:53.697"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Company}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231018 19:15:53.697" level="INFO">Simulating Mouse Over on element 'xpath = (//*[@class='tw-text-gray-200 group-hover:tw-text-gold'])[2]'.</msg>
+<status status="PASS" starttime="20231018 19:15:53.697" endtime="20231018 19:15:53.986"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Press}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:15:53.986" level="INFO">Clicking element 'xpath = //span[contains(text(),"Press")]'.</msg>
+<status status="PASS" starttime="20231018 19:15:53.986" endtime="20231018 19:15:54.259"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:15:57.267" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:15:54.259" endtime="20231018 19:15:57.267"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${Windows}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20231018 19:15:57.299" level="INFO">${Windows} = ['F932FF181D720A9B5A5B455867C46608', '57B4A4E44D5FEDEE2BEA084C0C6EAFEF']</msg>
+<status status="PASS" starttime="20231018 19:15:57.267" endtime="20231018 19:15:57.299"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${Windows}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231018 19:15:57.299" endtime="20231018 19:15:57.434"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${Presstitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:15:57.451" level="INFO">${Presstitle} = Press - CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:15:57.435" endtime="20231018 19:15:57.459"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Presstitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:15:57.459" endtime="20231018 19:15:57.459"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20231018 19:15:57.459" endtime="20231018 19:15:57.533"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${Windows}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231018 19:15:57.533" endtime="20231018 19:15:57.545"/>
+</kw>
+<status status="PASS" starttime="20231018 19:15:45.965" endtime="20231018 19:15:57.545"/>
+</kw>
+<kw name="Verifying the Trade Now button" library="TradeNow">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${TradeNow}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231018 19:15:57.553" level="INFO">Clicking button 'xpath = //button[contains(text(),"TRADE NOW")]'.</msg>
+<status status="PASS" starttime="20231018 19:15:57.553" endtime="20231018 19:16:06.561"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:16:09.561" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:16:06.561" endtime="20231018 19:16:09.561"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${TradeTitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:16:09.577" level="INFO">${TradeTitle} = BTC to INR | Buy BTC in India at best price at ₹24,78,343 | CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:16:09.561" endtime="20231018 19:16:09.577"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${TradeTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:16:09.577" endtime="20231018 19:16:09.577"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231018 19:16:09.592" level="INFO">Opening url 'https://coinswitch.co/pro/'</msg>
+<status status="PASS" starttime="20231018 19:16:09.577" endtime="20231018 19:16:10.661"/>
+</kw>
+<status status="PASS" starttime="20231018 19:15:57.553" endtime="20231018 19:16:10.675"/>
+</kw>
+<kw name="Verifying the Checkout API Trading button" library="Checkout">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${CheckoutAPITrading}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:10.675" level="INFO">Clicking button 'xpath = //button[contains(text(),"CHECKOUT API TRADING")]'.</msg>
+<status status="PASS" starttime="20231018 19:16:10.675" endtime="20231018 19:16:12.600"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:16:15.601" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:16:12.600" endtime="20231018 19:16:15.601"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${CheckoutTitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:16:15.616" level="INFO">${CheckoutTitle} = API Trading with CoinSwitch, Boost Your Crypto Investments with Best Trading Software</msg>
+<status status="PASS" starttime="20231018 19:16:15.601" endtime="20231018 19:16:15.616"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${CheckoutTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:16:15.616" endtime="20231018 19:16:15.632"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231018 19:16:15.632" level="INFO">Opening url 'https://coinswitch.co/pro/'</msg>
+<status status="PASS" starttime="20231018 19:16:15.632" endtime="20231018 19:16:16.639"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:16:19.640" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:16:16.639" endtime="20231018 19:16:19.640"/>
+</kw>
+<status status="PASS" starttime="20231018 19:16:10.675" endtime="20231018 19:16:19.640"/>
+</kw>
+<kw name="Verifying the Multiple Exchanges, One Platform section" library="MultipleExchanges">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${MultipleExchangesTryNow}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20231018 19:16:19.640" endtime="20231018 19:16:20.048"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MultipleExchangesTryNow}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231018 19:16:20.048" endtime="20231018 19:16:20.095"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${MultipleExchangesTxt}</var>
+<arg>${MultipleExchangesText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:20.173" level="INFO">${MultipleExchangesTxt} = Multiple Exchanges, One Platform</msg>
+<status status="PASS" starttime="20231018 19:16:20.095" endtime="20231018 19:16:20.173"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${MultipleExchangesText}</arg>
+<arg>Multiple Exchanges, One Platform</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20231018 19:16:20.173" level="INFO">Verifying element 'xpath = (//*[@class='tw-max-w-sm tw-py-4 tw-text-3xl tw-text-gold-500 md:tw-max-w-xs md:tw-text-4xl'])[1]' contains exact text 'Multiple Exchanges, One Platform'.</msg>
+<status status="PASS" starttime="20231018 19:16:20.173" endtime="20231018 19:16:20.220"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Multiple Exchanges, One Platform section has been displayed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:16:20.220" endtime="20231018 19:16:20.220"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MultipleExchangesTryNow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:20.220" level="INFO">Clicking element 'xpath = (//*[@class='tw-hidden tw-items-center tw-text-gold md:tw-flex '])[1]'.</msg>
+<status status="PASS" starttime="20231018 19:16:20.220" endtime="20231018 19:16:25.812"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:16:28.812" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:16:25.812" endtime="20231018 19:16:28.812"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${MXOPTitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:16:28.828" level="INFO">${MXOPTitle} = BTC to INR | Buy BTC in India at best price at ₹24,78,343 | CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:16:28.812" endtime="20231018 19:16:28.828"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${MXOPTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:16:28.828" endtime="20231018 19:16:28.828"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231018 19:16:28.844" level="INFO">Opening url 'https://coinswitch.co/pro/'</msg>
+<status status="PASS" starttime="20231018 19:16:28.844" endtime="20231018 19:16:29.836"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:16:32.837" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:16:29.836" endtime="20231018 19:16:32.837"/>
+</kw>
+<status status="PASS" starttime="20231018 19:16:19.640" endtime="20231018 19:16:32.837"/>
+</kw>
+<kw name="Verifying the Rupee-Powered section" library="RupeePowered">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${RupeePoweredTryNow}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20231018 19:16:32.837" endtime="20231018 19:16:33.224"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RupeePoweredTryNow}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231018 19:16:33.224" endtime="20231018 19:16:33.302"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${RupeePoweredTxt}</var>
+<arg>${RupeePoweredText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:33.380" level="INFO">${RupeePoweredTxt} = Rupee-Powered</msg>
+<status status="PASS" starttime="20231018 19:16:33.302" endtime="20231018 19:16:33.396"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${RupeePoweredText}</arg>
+<arg>Rupee-Powered</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20231018 19:16:33.396" level="INFO">Verifying element 'xpath = (//*[@class='tw-max-w-sm tw-py-4 tw-text-3xl tw-text-gold-500 md:tw-max-w-xs md:tw-text-4xl'])[2]' contains exact text 'Rupee-Powered'.</msg>
+<status status="PASS" starttime="20231018 19:16:33.396" endtime="20231018 19:16:33.458"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Rupee-Powered</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:16:33.458" endtime="20231018 19:16:33.458"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${RupeePoweredTryNow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:33.474" level="INFO">Clicking element 'xpath = (//*[@class='tw-hidden tw-items-center tw-text-gold md:tw-flex'])[1]'.</msg>
+<status status="PASS" starttime="20231018 19:16:33.458" endtime="20231018 19:16:39.088"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:16:42.095" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:16:39.088" endtime="20231018 19:16:42.095"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${RPTitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:16:42.111" level="INFO">${RPTitle} = BTC to INR | Buy BTC in India at best price at ₹24,78,343 | CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:16:42.095" endtime="20231018 19:16:42.111"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${RPTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:16:42.111" endtime="20231018 19:16:42.127"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231018 19:16:42.127" level="INFO">Opening url 'https://coinswitch.co/pro/'</msg>
+<status status="PASS" starttime="20231018 19:16:42.127" endtime="20231018 19:16:43.171"/>
+</kw>
+<status status="PASS" starttime="20231018 19:16:32.837" endtime="20231018 19:16:43.171"/>
+</kw>
+<kw name="Veryfying the Data-Driven Decisions section" library="DataDrivenDecision">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${DataDrivenTryNow}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20231018 19:16:43.171" endtime="20231018 19:16:43.533"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DataDrivenTryNow}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231018 19:16:43.533" endtime="20231018 19:16:43.623"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${DataDrivenTxt}</var>
+<arg>${DataDrivenText}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:43.672" level="INFO">${DataDrivenTxt} = Data-Driven Decisions</msg>
+<status status="PASS" starttime="20231018 19:16:43.623" endtime="20231018 19:16:43.672"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${DataDrivenText}</arg>
+<arg>Data-Driven Decisions</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20231018 19:16:43.687" level="INFO">Verifying element 'xpath = (//*[@class='tw-max-w-sm tw-py-4 tw-text-3xl tw-text-gold-500 md:tw-max-w-xs md:tw-text-4xl'])[3]' contains exact text 'Data-Driven Decisions'.</msg>
+<status status="PASS" starttime="20231018 19:16:43.672" endtime="20231018 19:16:43.719"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Data-Driven Decisions</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:16:43.719" endtime="20231018 19:16:43.719"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DataDrivenTryNow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:43.734" level="INFO">Clicking element 'xpath = (//*[@class='tw-hidden tw-items-center tw-text-gold md:tw-flex'])[2]'.</msg>
+<status status="PASS" starttime="20231018 19:16:43.719" endtime="20231018 19:16:49.176"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:16:52.176" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:16:49.176" endtime="20231018 19:16:52.176"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${DDDTitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231018 19:16:52.397" level="INFO">${DDDTitle} = BTC to INR | Buy BTC in India at best price at ₹24,78,343 | CoinSwitch</msg>
+<status status="PASS" starttime="20231018 19:16:52.176" endtime="20231018 19:16:52.397"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${DDDTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:16:52.397" endtime="20231018 19:16:52.397"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231018 19:16:52.397" level="INFO">Opening url 'https://coinswitch.co/pro/'</msg>
+<status status="PASS" starttime="20231018 19:16:52.397" endtime="20231018 19:16:53.459"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 19:16:56.459" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231018 19:16:53.459" endtime="20231018 19:16:56.461"/>
+</kw>
+<status status="PASS" starttime="20231018 19:16:43.171" endtime="20231018 19:16:56.461"/>
+</kw>
+<kw name="Verifying the Rate icon" library="RateIcon">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${RateIcon}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:56.473" level="INFO">Clicking button 'xpath = //*[@class='_hj-g7b-Z__MinimizedWidgetBottom__open _hj--qUEH__MinimizedWidgetBottom__right']'.</msg>
+<status status="PASS" starttime="20231018 19:16:56.471" endtime="20231018 19:16:56.737"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Like}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:56.750" level="INFO">Clicking button 'xpath = (//*[@class='_hj-zyNAL__EmotionOption__EmotionOption _hj-exLiv__EmotionOption__fadeIn'])[4]'.</msg>
+<status status="PASS" starttime="20231018 19:16:56.737" endtime="20231018 19:16:56.885"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Feedback}</arg>
+<arg>Good</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:56.885" level="INFO">Typing text 'Good' into text field 'xpath = //*[@class='_hj-aMKgg__EmotionComment__textArea _hj-EZqbk__styles__inputField']'.</msg>
+<status status="PASS" starttime="20231018 19:16:56.885" endtime="20231018 19:16:57.010"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Send}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:57.013" level="INFO">Clicking button 'xpath = //*[@class='_hj-SU8LU__styles__primaryButton']'.</msg>
+<status status="PASS" starttime="20231018 19:16:57.010" endtime="20231018 19:16:57.129"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Skip}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:57.131" level="INFO">Clicking button 'xpath = //*[@class='_hj-F457+__styles__clearButton _hj-rWd-f__EmailStep__clearButton']'.</msg>
+<status status="PASS" starttime="20231018 19:16:57.129" endtime="20231018 19:16:57.227"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ThanksText}</var>
+<arg>${Thanks}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231018 19:16:57.300" level="INFO">${ThanksText} = Thank you for sharing your feedback with us!</msg>
+<status status="PASS" starttime="20231018 19:16:57.227" endtime="20231018 19:16:57.300"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Thanks}</arg>
+<arg>Thank you for sharing your feedback with us!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20231018 19:16:57.300" level="INFO">Verifying element 'xpath = //*[@class='_hj-PFeiP__MinimizedWidgetMessage__messageText']' contains exact text 'Thank you for sharing your feedback with us!'.</msg>
+<status status="PASS" starttime="20231018 19:16:57.300" endtime="20231018 19:16:57.324"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"Thank you for sharing your feedback with us!" message has been displayed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231018 19:16:57.324" endtime="20231018 19:16:57.324"/>
+</kw>
+<status status="PASS" starttime="20231018 19:16:56.463" endtime="20231018 19:16:57.324"/>
+</kw>
+<status status="PASS" starttime="20231018 19:15:10.799" endtime="20231018 19:16:57.324"/>
+</test>
+<status status="PASS" starttime="20231018 19:15:10.399" endtime="20231018 19:16:57.324"/>
+</suite>
+<status status="PASS" starttime="20231018 19:15:10.387" endtime="20231018 19:16:57.324"/>
+</suite>
+<status status="PASS" starttime="20231018 19:15:10.332" endtime="20231018 19:16:57.324"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RFCoinswitch">RFCoinswitch</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testcases">RFCoinswitch.Testcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Testcases">RFCoinswitch.Testcases.Testcases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
